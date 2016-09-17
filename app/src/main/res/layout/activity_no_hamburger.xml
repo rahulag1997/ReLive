@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.smartstor.CloudMusicManager.MusicActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/music_recycler"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_above="@+id/include">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/mplayerfooter"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+
+
+        android:id="@+id/include" />
+
+</RelativeLayout>
